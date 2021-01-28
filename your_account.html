@@ -24,13 +24,14 @@
 
     <!--  ****** Custom CSS **** -->
     <link rel="stylesheet" href="css/custom.css">
-    <title>Amazon Login form</title>
+    <title>Your Account</title>
 </head>
 
 <body>
     <!-- Navbar Starts -->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
         <!-- ************** Drawer ************************* -->
         <button class="btn btn-outline-light" data-toggle="drawer" data-target="#amazonDrawer">
             <i class="fas fa-sliders-h"></i>
@@ -189,73 +190,60 @@
 
     <!--     Navbar Ends -->
 
+    <!--                    Your Account  Starts                           -->
 
-    <!-- ****************************** Login form Started ********************************************** -->
-
-    <!-- ************ Login form Card Start ************ -->
-
-    <div class="container mb-5 pb-8">
-        <div class="card mx-auto mt-5 shadow  rounded" style="width: 25rem;">
-
-            <div class="card-body">
-                <h4 class="card-title">Login</h4>
-
-                <!-- ************ Login form ************ -->
-
-                <form class="needs-validation" method="POST" action="#" novalidate>
-                    <div class="form-group">
-                        <label for="userEmail">Email: </label>
-                        <input type="email" name="email" class="form-control" placeholder="abc@gmailcom" id="userEmail"
-                            aria-describedby="emailHelp" required>
-                        <small id="emailHelp" class="form-text text-muted">
-                            <i class="fas fa-info text-primary mx-2"></i>We'll never share your email with anyone
-                            else.
-                        </small>
-                        <div class="valid-feedback">
-                            <i class="far fa-thumbs-up text-success"></i> OK
-                        </div>
-
-                        <div class="invalid-feedback">
-                            <i class="fas fa-exclamation-triangle text-danger"></i> Some error in Email
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="userPassword">Password: </label>
-                        <input type="password" class="form-control" name="password" placeholder="******"
-                            id="userPassword" aria-describedby="passwordHelp" required minlength="6">
-                        <small id="passwordHelp" class="form-text text-muted">
-                            <i class="fas fa-info text-primary mx-2"></i>Password must be atleast 6
-                            characters.</small>
-                        <div class="valid-feedback">
-                            <i class="far fa-thumbs-up text-success"></i> OK
-                        </div>
-
-                        <div class="invalid-feedback">
-                            <i class="fas fa-exclamation-triangle text-danger"></i> Some error in Password
+    <div class="container mt-5">
+        <h2>Your Account</h2>
+        <!--            Account Panel  Starts         -->
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="btn w-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="cart-title">
+                                <i class="fas fa-2x fa-shopping-bag"></i>
+                                <span class="h4">Your Orders</span>
+                            </div>
+                            <small class="text-muted"> Track, return or buy things again</small>
                         </div>
                     </div>
-
-                    <button type="submit" class="btn btn-warning w-100 shadow rounded btn-sm">Signin</button>
-                </form>
-                <!-- ************ Login form Ends************ -->
-                <!-- ******* OR Seperator *************-->
-                <hr class="hr-text" data-content="New to Amazon?">
-
-                <!-- ******* Create account button ******* -->
-                <a href="register.html" class="btn btn-sm btn-dark w-100 mt-2">
-                    Create your Amazon account
-                </a>
-                <a href="#" class="btn btn-outline-success btn-sm w-100 mt-2">
-                    <i class="fab fa-google"></i> Sign in with Google
-                </a>
-                <a href="#" class="btn btn-outline-primary btn-sm w-100 mt-2">
-                    <i class="fab fa-facebook-f"></i> Sign in with Facebook
                 </a>
             </div>
+
+            <div class="col-md-4">
+                <a href="#" class="btn w-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="cart-title">
+                                <i class="fas fa-2x fa-key"></i>
+                                <span class="h4">Password Change</span>
+                            </div>
+                            <small class="text-muted"> Change your Password</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="#" class="btn w-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="cart-title">
+                                <i class="fas fa-2x fa-map-marked-alt"></i>
+                                <span class="h4">Your Addresses</span>
+                            </div>
+                            <small class="text-muted"> Edit addresses for orders.</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
+        <!--            Account Panel  Ends       -->
     </div>
-    <!-- ************ Login form Card Ends ************ -->
+
+    <!--                    Your Account  Ends                          -->
+
 
 
 
@@ -280,27 +268,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     -->
-
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
 </body>
 
 </html>
