@@ -24,7 +24,7 @@
 
     <!--  ****** Custom CSS **** -->
     <link rel="stylesheet" href="css/custom.css">
-    <title>Amazon Login form</title>
+    <title>Amazon Register form</title>
 </head>
 
 <body>
@@ -190,46 +190,55 @@
     <!--     Navbar Ends -->
 
 
-    <!-- ****************************** Login form Started ********************************************** -->
+    <!-- ****************************** Register form Started ********************************************** -->
 
-    <!-- ************ Login form Card Start ************ -->
+    <!-- ************ Register form Card Start ************ -->
 
     <div class="container mb-5 pb-8">
         <div class="card mx-auto mt-5 shadow  rounded" style="width: 25rem;">
 
             <div class="card-body">
-                <h4 class="card-title">Login</h4>
+                <h4 class="card-title">Register</h4>
 
-                <!-- ************ Login form ************ -->
+                <!-- ************ Register form ************ -->
 
                 <form novalidate>
+                    <div class="form-group">
+                        <label for="userName">Your name: </label>
+                        <input type="text" name="name" class="form-control" placeholder="abc" id="userName">
+                    </div>
                     <div class="form-group">
                         <label for="userEmail">Email: </label>
                         <input type="email" name="email" class="form-control" placeholder="abc@gmailcom" id="userEmail"
                             aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">
-                            <i class="fas fa-info text-primary mx-2"></i>We'll never share your email with anyone
+                        <small id="emailHelp" class="form-text text-muted"><i class="fas fa-info text-primary mx-2"></i>
+                            We'll never share your email with anyone
                             else.</small>
                     </div>
                     <div class="form-group">
                         <label for="userPassword">Password: </label>
                         <input type="password" class="form-control" name="password" placeholder="******"
                             id="userPassword" aria-describedby="passwordHelp">
-                        <small id="passwordHelp" class="form-text text-muted">
-                            <i class="fas fa-info text-primary mx-2"></i>Password must be atleast 6
+                        <small id="passwordHelp" class="form-text text-muted"><i class="fas fa-info text-primary mx-2"></i>
+                             Password must be atleast 6
                             characters.</small>
                     </div>
+                    <div class="form-group">
+                        <label for="userPassword2">Enter Again Password: </label>
+                        <input type="password" class="form-control" name="password2" placeholder="******"
+                            id="userPassword2" aria-describedby="passwordHelp2">
+                        <small id="passwordHelp2" class="form-text text-muted "><i class="fas fa-info text-primary mx-2"></i>
+                             Password must match the above.
+                         </small>
+                    </div>
 
-                    <button type="submit" class="btn btn-warning w-100 shadow rounded btn-sm">Signin</button>
+                    <button type="submit" class="btn btn-warning w-100 shadow rounded btn-sm">Register</button>
                 </form>
-                <!-- ************ Login form Ends************ -->
+                <!-- ************ Register form Ends************ -->
                 <!-- ******* OR Seperator *************-->
-                <hr class="hr-text" data-content="New to Amazon?">
-
+                <hr class="hr-text" data-content="OR"
                 <!-- ******* Create account button ******* -->
-                <a href="register.html" class="btn btn-sm btn-dark w-100 mt-2">
-                    Create your Amazon account
-                </a>
+                <p class="text-center">Already have an account? <a href="login.html">Sign in <i class="fas fa-caret-right"></i></a></p>
                 <a href="#" class="btn btn-outline-success btn-sm w-100 mt-2">
                     <i class="fab fa-google"></i> Sign in with Google
                 </a>
@@ -239,7 +248,7 @@
             </div>
         </div>
     </div>
-    <!-- ************ Login form Card Ends ************ -->
+    <!-- ************ Register form Card Ends ************ -->
 
 
 
