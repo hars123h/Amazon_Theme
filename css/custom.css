@@ -27,3 +27,33 @@ hr.hr-text::before {
 .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
 }
+ .card-edit {
+    width: 320px;
+     height: 285px; 
+     border: 2px dashed  #c7c7c7;
+ }
+
+@media (max-width: 1200px) {
+    .card-edit {
+         width: 260px;
+         height: 286px; 
+         border: 2px dashed  #c7c7c7;
+     }
+ }
+
+ @media (max-width: 992px) {
+    .card-edit {
+         width: 200px;
+         height: 300px; 
+         border: 2px dashed  #c7c7c7;
+     }
+ }
+ @media (max-width: 767px) {
+    .card-edit {
+        width: 320px;
+         height: 266px; 
+         border: 2px dashed  #c7c7c7;
+     }
+ }
+
+
